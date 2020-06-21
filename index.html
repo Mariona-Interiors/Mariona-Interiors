@@ -15,9 +15,16 @@ h2 {
 }
 figure {
     margin-bottom: 5vh;
+    width: 100%;
 }
 img {
     margin-bottom: 30px;
+}
+.figure-img {
+    max-width: 100%;
+}
+img.figure-img {
+    width: 100%;
 }
 [data-toggle="modal"] {
     cursor: pointer;
@@ -25,17 +32,11 @@ img {
 .modal-body img {
     width: 100%;
 }
-.modal-body img.full-view, img.full-view {
+.modal-body img.full-view {
     width: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
-}
-img.full-view {
-    max-height: 100vh;
-    max-width: 100%;
-}
-.modal-body img.full-view {
     max-height: calc(100vh - 200px);
     max-width: 90%;
 }
@@ -80,7 +81,9 @@ img.profile {
 </div>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/resin_sea_urchin_close.jpg" data-toggle="modal" data-target="#image2-1" alt="thumbnail image of resin urchin image"><figcaption class="figure-caption">Abstract Sea Scape 1 (Urchin), £60</figcaption></figure>
+    <!-- Column 1 -->
+    <div class="col-xl-3 col-lg-6 col-md-6"> 
+        <figure class="figure"><img class="figure-img" src="projects/resin_sea_urchin_close.jpg" data-toggle="modal" data-target="#image2-1" alt="thumbnail image of resin urchin image"><figcaption class="figure-caption">Abstract Sea Scape 1 (Urchin), £60</figcaption></figure>
        <div class="modal fade bd-example-modal-lg" id="image2-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -94,8 +97,7 @@ img.profile {
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/resin_sea_octopus_close.jpg" data-toggle="modal" data-target="#image2-2" alt="thumbnail image of resin octopus image"><figcaption class="figure-caption">Abstract Sea Scape 2 (Octopus), £60</figcaption></figure>
+    <figure class="figure"><img class="figure-img" src="projects/resin_sea_octopus_close.jpg" data-toggle="modal" data-target="#image2-2" alt="thumbnail image of resin octopus image"><figcaption class="figure-caption">Abstract Sea Scape 2 (Octopus), £60</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image2-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -109,8 +111,7 @@ img.profile {
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/resin_sea_jellyfish_close.jpg" data-toggle="modal" data-target="#image2-3" alt="thumbnail image of resin jellyfish image"><figcaption class="figure-caption">Abstract Sea Scape 3 (Jellyfish), £60</figcaption></figure>
+    <figure class="figure"><img class="figure-img" src="projects/resin_sea_jellyfish_close.jpg" data-toggle="modal" data-target="#image2-3" alt="thumbnail image of resin jellyfish image"><figcaption class="figure-caption">Abstract Sea Scape 3 (Jellyfish), £60</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image2-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -124,8 +125,7 @@ img.profile {
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/still-life_edit_web.jpg" data-toggle="modal" data-target="#image30" alt="thumbnail image of organic abstract painting"><figcaption class="figure-caption">Organic Abstract, £460</figcaption></figure>
+    <figure class="figure"><img class="figure-img" src="projects/still-life_edit_web.jpg" data-toggle="modal" data-target="#image30" alt="thumbnail image of organic abstract painting"><figcaption class="figure-caption">Organic Abstract, £460</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -139,8 +139,7 @@ img.profile {
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/neon-flowers_edit_web.jpg" data-toggle="modal" data-target="#image29" alt="thumbnail image of neon flowers painting"><figcaption class="figure-caption">Neon Haze, £160</figcaption></figure>
+    <figure class="figure"><img class="figure-img" src="projects/neon-flowers_edit_web.jpg" data-toggle="modal" data-target="#image29" alt="thumbnail image of neon flowers painting"><figcaption class="figure-caption">Neon Haze, £160</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image29" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -154,8 +153,7 @@ img.profile {
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/mosaic-frame-mirror_edit_web.jpg" data-toggle="modal" data-target="#image28" alt="thumbnail image of mosaic frame mirror">
+    <figure class="figure"><img class="figure-img" src="projects/mosaic-frame-mirror_edit_web.jpg" data-toggle="modal" data-target="#image28" alt="thumbnail image of mosaic frame mirror">
 <figcaption class="figure-caption">Mediterranean Mirror, £240</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -170,8 +168,7 @@ img.profile {
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/gold-leaf-figure_edit_web.jpg" data-toggle="modal" data-target="#image27" alt="thumbnail image of artwork with gold leaf"><figcaption class="figure-caption">Adoration &amp; Contempt, £260</figcaption></figure>
+    <figure class="figure"><img class="figure-img" src="projects/gold-leaf-figure_edit_web.jpg" data-toggle="modal" data-target="#image27" alt="thumbnail image of artwork with gold leaf"><figcaption class="figure-caption">Adoration &amp; Contempt, £260</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image27" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -185,287 +182,7 @@ img.profile {
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/fairy-painting_edit_web.jpg" data-toggle="modal" data-target="#image26" alt="thumbnail image of Female Aura painting"><figcaption class="figure-caption">Female Aura, £160</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image26" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Female Aura, £160
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 102 cm x W 81.5 cm x D 2 cm <br>Decoupage of original acrylic on canvas <br>Original, Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/fairy-painting_edit_web.jpg" alt="Female Aura painting"><br>
-              <img src="projects/fairy-painting_edit_web.jpg" alt="Female Aura painting"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/curly-hair-woman_edit_web.jpg" data-toggle="modal" data-target="#image25" alt="thumbnail image of painting of a woman"><figcaption class="figure-caption">Ellinida, £340</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image25" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Ellinida, £340
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 102 cm x W 87.5 cm x D 4.5 cm <br>Oil on canvas with relief detail <br>Original, Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/curly-hair-woman_edit_web.jpg" alt="painting of a woman"><br>
-              <img src="projects/curly-hair-woman_edit_web.jpg" alt="painting of a woman"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/church_edit_web.jpg" data-toggle="modal" data-target="#image24" alt="thumbnail image of painting of building"><figcaption class="figure-caption">Architectural Ambience, £320</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Architectural Ambience, £320
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 102 cm x W 81.5 cm x D 2 cm <br>Acrylic on canvas <br>Original, Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/church_edit_web.jpg" alt="painting of building"><br>
-              <img src="projects/church_edit_web.jpg" alt="painting of building"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/redhead-woman_web.jpg" data-toggle="modal" data-target="#image21" alt="thumbnail image of sea serpents painting">
-<figcaption class="figure-caption">Sea Serpents, £640</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Sea Serpents, £640
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 122 cm x W 40.1 cm x D 2 cm <br>Interpretation of Gustav Klimt&rsquo;s work <br>
-Wooden base, oil on canvas with gold leaf and vitreous glass</p>
-              <img class="full-view d-none d-md-block" src="projects/redhead-woman_web.jpg" alt="sea serpents painting"><br>
-              <img src="projects/redhead-woman_web.jpg" alt="sea serpents painting"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/mother-and-child_web.jpg" data-toggle="modal" data-target="#image20" alt="thumbnail image of painting of motherly love"><figcaption class="figure-caption">Agapi, £320</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Agapi (an emotional depiction of motherly love), £320
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 102 cm x W 81.5 cm x D 2 cm <br>Acrylic and gold leaf on canvas <br>Original, Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/mother-and-child_web.jpg" alt="painting of motherly love"><br>
-              <img src="projects/mother-and-child_web.jpg" alt="painting of motherly love"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/mermaid-glass-paint-mosaic_web.jpg" data-toggle="modal" data-target="#image19" alt="thumbnail image of painting of sea woman"><figcaption class="figure-caption">Thalassa (Sea Woman), £480</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Thalassa (Sea Woman), £480
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 126 cm x W 47.5 cm x D 2 cm <br>Glass hand painted with resin and mosaic of vitreous glass and shell <br>Pine frame</p>
-              <img class="full-view d-none d-md-block" src="projects/mermaid-glass-paint-mosaic_web.jpg" alt="painting of sea woman"><br>
-              <img src="projects/mermaid-glass-paint-mosaic_web.jpg" alt="painting of sea woman"><br>
-              <img src="projects/mermaid-glass-close_web.jpg" alt="painting of sea woman">
-			</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/bust-mosaic_web.jpg" data-toggle="modal" data-target="#image18" alt="thumbnail image of bust with mosaic"><figcaption class="figure-caption">Good &amp; Evil, £820</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Good &amp; Evil, £820
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 69 cm x W 43 cm x D 22 cm <br>Bust with mosaic and decoupage with gold leaf detail</p>
-              <img class="full-view d-none d-md-block" src="projects/bust-mosaic_web.jpg" alt="bust with mosaic"><br>
-              <img src="projects/bust-mosaic_web.jpg" alt="bust with mosaic"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/blonde-woman_web.jpg" data-toggle="modal" data-target="#image17" alt="thumbnail image of painting of a woman"><figcaption class="figure-caption">Ashes to Ashes, £140</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Ashes to Ashes, £140
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 61 cm x W 46 cm x D 3 cm <br>Oil and acrylic with relief detail <br>Original, Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/blonde-woman_web.jpg" alt="painting of a woman"><br>
-              <img src="projects/blonde-woman_web.jpg" alt="painting of a woman"> 
-			</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/bird-paint-resin_web.jpg" data-toggle="modal" data-target="#image16" alt="thumbnail image of glass vase"><figcaption class="figure-caption">Cockerel Vase, £72</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Cockerel Vase, £72
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 38.5 cm x W 13.5 cm x D 13.5 cm <br>
-              Glass vase with decoupage and hand painted with relief detail</p>
-              <img class="full-view d-none d-md-block" src="projects/bird-paint-resin_web.jpg" alt="glass vase"><br>
-              <img src="projects/bird-paint-resin_web.jpg" alt="glass vase">
-			</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/silver-table.jpg" data-toggle="modal" data-target="#image15" alt="thumbnail image of oak console table"><figcaption class="figure-caption">Oak console table with drawer, £125</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Oak console table with drawer, £125
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 104.5 cm x W 84 cm x D 43 cm <br>Patina and silver leaf finish with gloss finish</p>
-              <img class="full-view d-none d-md-block" src="projects/silver-table.jpg" alt="oak console table"><br>
-              <img src="projects/silver-table.jpg" alt="oak console table"> 
-			</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/seahorse-modified_web.jpg" data-toggle="modal" data-target="#image2" alt="thumbnail image of painting of a seahorse"><figcaption class="figure-caption">Atlantis, £420</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Atlantis, £420
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 82 cm x W 102 cm x D 2 cm <br>Multi media on canvas with gold leaf and healing quartz <br>Original, Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/seahorse-modified_web.jpg" alt="painting of a seahorse"><br>
-              <img src="projects/seahorse-modified_web.jpg" alt="painting of a seahorse"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/lady-on-glass.jpg" data-toggle="modal" data-target="#image3" alt="thumbnail image of plexi-glass plaque with a woman"><figcaption class="figure-caption">Ellinida, £180</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Ellinida, £180
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 89 cm x W 30 cm x D 1 cm <br>
-              Plexiglas plaque with limited edition print from Number 6 <br>Added relief border</p>
-              <img class="full-view d-none d-md-block" src="projects/lady-on-glass.jpg" alt="plexi-glass plaque with a woman"><br>
-              <img src="projects/lady-on-glass.jpg" alt="plexi-glass plaque with a woman"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/our-lady.jpg" data-toggle="modal" data-target="#image4" alt="thumbnail image of painting of Fatima"><figcaption class="figure-caption">Fatima, £180</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Fatima, £180
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 120 cm x W 50 cm x D 2 cm<br>Oil and acrylic on canvas<br>Original, Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/our-lady.jpg" alt="painting of Fatima"><br>
-              <img src="projects/our-lady.jpg" alt="painting of Fatima"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/landscape.jpg" data-toggle="modal" data-target="#image5" alt="thumbnail image of painting of an Italian building"><figcaption class="figure-caption">Italian Aura, £460</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Italian Aura, £460
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 172 cm x W 107 cm x D 1 cm <br>Original acrylic on canvas with resin <br>Original, Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/landscape.jpg" alt="painting of an Italian building"><br>
-              <img src="projects/landscape.jpg" alt="painting of an Italian building"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/pastel-klimt-painting.jpg" data-toggle="modal" data-target="#image6" alt="thumbnail image of interpretation of a Margaret MacDonald painting"><figcaption class="figure-caption">O Ye Who Walk, £320</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">O Ye Who Walk, £320
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 139 cm x W 104.5 cm x D 2.5 cm <br>Interpretation of Margaret MacDonald&rsquo;s painting (wife of Charles Rennie Macintosh) <br>Limited addition print on canvas with hand painted details and relief <br>Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/pastel-klimt-painting.jpg" alt="interpretation of a Margaret MacDonald painting"> <br>
-              <img src="projects/pastel-klimt-painting.jpg" alt="interpretation of a Margaret MacDonald painting"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/chinese-dragon-painting.jpg" data-toggle="modal" data-target="#image7" alt="thumbnail image of painting of a dragon"><figcaption class="figure-caption">Dragon&rsquo;s Orb, £740</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Dragon&rsquo;s Orb, £740 
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 218 cm x W 59.5 cm x D 1.3 cm <br>Wooden panel with resin, gold leaf and vitreous glass <br>Original, Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/chinese-dragon-painting.jpg" alt="painting of a dragon"><br>
-              <img src="projects/chinese-dragon-painting.jpg" alt="painting of a dragon"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/Dark-Klimt-Woman-Painting-Mosaic.jpg" data-toggle="modal" data-target="#image8" alt="thumbnail image of interpretation of Judith painting by Gustav Klimt"><figcaption class="figure-caption">Judith, £1,200</figcaption></figure>
-        <div class="modal fade bd-example-modal-lg" id="image8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Judith, £1,200
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 216 cm x W 59 cm x D 2 cm <br>Interpretation of Gustav  Klimt&rsquo;s &lsquo;Judith&rsquo; <br>Wooden panel with oil painting, vitreous glass and stones <br>Original, Unframed </p>
-              <img class="full-view d-none d-md-block" src="projects/Dark-Klimt-Woman-Painting-Mosaic.jpg" alt="interpretation of Judith painting by Gustav Klimt"><br>
-              <img src="projects/Dark-Klimt-Woman-Painting-Mosaic.jpg" alt="interpretation of Judith painting by Gustav Klimt"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/Celtic-Mosaic.jpg" data-toggle="modal" data-target="#image11" alt="thumbnail image of Celtic abstract mosaic">
-      <figcaption class="figure-caption">Celtic Abstract, £1,000</figcaption></figure><div class="modal fade bd-example-modal-lg" id="image11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">Celtic Abstract, £1,000
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
-            </div>
-            <div class="modal-body">
-              <p class="small">H 196 cm x W 59.5 cm x D 2 cm <br>Wooden panel with mosaic of vitreous glass and canvas with oil, acrylic and resin <br>Original, Unframed</p>
-              <img class="full-view d-none d-md-block" src="projects/Celtic-Mosaic.jpg" alt="Celtic abstract mosaic"><br>
-              <img src="projects/Celtic-Mosaic.jpg" alt="Celtic abstract mosaic"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/Angel-Sculpture-1.jpg" data-toggle="modal" data-target="#image12" alt="thumbnail image of bust with mosaic and wings">
+    <figure class="figure"><img class="figure-img" src="projects/Angel-Sculpture-1.jpg" data-toggle="modal" data-target="#image12" alt="thumbnail image of bust with mosaic and wings">
       <figcaption class="figure-caption">Mosaic Angel, £2,200</figcaption></figure><div class="modal fade bd-example-modal-lg" id="image12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -482,8 +199,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/Red-Abstract-Painting-v2_edit_web.jpg" data-toggle="modal" data-target="#image13" alt="thumbnail image of red abstract painting"><figcaption class="figure-caption">Abstract Internal Combustion, £380</figcaption></figure>
+    <figure class="figure"><img class="figure-img" src="projects/Red-Abstract-Painting-v2_edit_web.jpg" data-toggle="modal" data-target="#image13" alt="thumbnail image of red abstract painting"><figcaption class="figure-caption">Abstract Internal Combustion, £380</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -494,6 +210,274 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
               <p class="small">H 104 cm x W 79.4 cm x D 4 cm <br>Textured acrylic, oil and resin on linen canvas <br>Original, Unframed</p>
               <img class="full-view d-none d-md-block" src="projects/Red-Abstract-Painting-v2_edit_web.jpg" alt="red abstract painting"> <br>
               <img src="projects/Red-Abstract-Painting-v2_edit_web.jpg" alt="red abstract painting"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-lg-6 col-md-6"> <figure class="figure"><img class="figure-img" src="projects/fairy-painting_edit_web.jpg" data-toggle="modal" data-target="#image26" alt="thumbnail image of Female Aura painting"><figcaption class="figure-caption">Female Aura, £160</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image26" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Female Aura, £160
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 102 cm x W 81.5 cm x D 2 cm <br>Decoupage of original acrylic on canvas <br>Original, Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/fairy-painting_edit_web.jpg" alt="Female Aura painting"><br>
+              <img src="projects/fairy-painting_edit_web.jpg" alt="Female Aura painting"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/curly-hair-woman_edit_web.jpg" data-toggle="modal" data-target="#image25" alt="thumbnail image of painting of a woman"><figcaption class="figure-caption">Ellinida, £340</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image25" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Ellinida, £340
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 102 cm x W 87.5 cm x D 4.5 cm <br>Oil on canvas with relief detail <br>Original, Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/curly-hair-woman_edit_web.jpg" alt="painting of a woman"><br>
+              <img src="projects/curly-hair-woman_edit_web.jpg" alt="painting of a woman"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/church_edit_web.jpg" data-toggle="modal" data-target="#image24" alt="thumbnail image of painting of building"><figcaption class="figure-caption">Architectural Ambience, £320</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Architectural Ambience, £320
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 102 cm x W 81.5 cm x D 2 cm <br>Acrylic on canvas <br>Original, Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/church_edit_web.jpg" alt="painting of building"><br>
+              <img src="projects/church_edit_web.jpg" alt="painting of building"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/redhead-woman_web.jpg" data-toggle="modal" data-target="#image21" alt="thumbnail image of sea serpents painting">
+<figcaption class="figure-caption">Sea Serpents, £640</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Sea Serpents, £640
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 122 cm x W 40.1 cm x D 2 cm <br>Interpretation of Gustav Klimt&rsquo;s work <br>
+Wooden base, oil on canvas with gold leaf and vitreous glass</p>
+              <img class="full-view d-none d-md-block" src="projects/redhead-woman_web.jpg" alt="sea serpents painting"><br>
+              <img src="projects/redhead-woman_web.jpg" alt="sea serpents painting"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/mother-and-child_web.jpg" data-toggle="modal" data-target="#image20" alt="thumbnail image of painting of motherly love"><figcaption class="figure-caption">Agapi, £320</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Agapi (an emotional depiction of motherly love), £320
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 102 cm x W 81.5 cm x D 2 cm <br>Acrylic and gold leaf on canvas <br>Original, Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/mother-and-child_web.jpg" alt="painting of motherly love"><br>
+              <img src="projects/mother-and-child_web.jpg" alt="painting of motherly love"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/mermaid-glass-paint-mosaic_web.jpg" data-toggle="modal" data-target="#image19" alt="thumbnail image of painting of sea woman"><figcaption class="figure-caption">Thalassa (Sea Woman), £480</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Thalassa (Sea Woman), £480
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 126 cm x W 47.5 cm x D 2 cm <br>Glass hand painted with resin and mosaic of vitreous glass and shell <br>Pine frame</p>
+              <img class="full-view d-none d-md-block" src="projects/mermaid-glass-paint-mosaic_web.jpg" alt="painting of sea woman"><br>
+              <img src="projects/mermaid-glass-paint-mosaic_web.jpg" alt="painting of sea woman"><br>
+              <img src="projects/mermaid-glass-close_web.jpg" alt="painting of sea woman">
+			</div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/bust-mosaic_web.jpg" data-toggle="modal" data-target="#image18" alt="thumbnail image of bust with mosaic"><figcaption class="figure-caption">Good &amp; Evil, £820</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Good &amp; Evil, £820
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 69 cm x W 43 cm x D 22 cm <br>Bust with mosaic and decoupage with gold leaf detail</p>
+              <img class="full-view d-none d-md-block" src="projects/bust-mosaic_web.jpg" alt="bust with mosaic"><br>
+              <img src="projects/bust-mosaic_web.jpg" alt="bust with mosaic"> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Column 2 -->
+    <div class="col-xl-3 col-lg-6 col-md-6"> 
+    <figure class="figure"><img class="figure-img" src="projects/blonde-woman_web.jpg" data-toggle="modal" data-target="#image17" alt="thumbnail image of painting of a woman"><figcaption class="figure-caption">Ashes to Ashes, £140</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Ashes to Ashes, £140
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 61 cm x W 46 cm x D 3 cm <br>Oil and acrylic with relief detail <br>Original, Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/blonde-woman_web.jpg" alt="painting of a woman"><br>
+              <img src="projects/blonde-woman_web.jpg" alt="painting of a woman"> 
+			</div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/bird-paint-resin_web.jpg" data-toggle="modal" data-target="#image16" alt="thumbnail image of glass vase"><figcaption class="figure-caption">Cockerel Vase, £72</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Cockerel Vase, £72
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 38.5 cm x W 13.5 cm x D 13.5 cm <br>
+              Glass vase with decoupage and hand painted with relief detail</p>
+              <img class="full-view d-none d-md-block" src="projects/bird-paint-resin_web.jpg" alt="glass vase"><br>
+              <img src="projects/bird-paint-resin_web.jpg" alt="glass vase">
+			</div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/silver-table.jpg" data-toggle="modal" data-target="#image15" alt="thumbnail image of oak console table"><figcaption class="figure-caption">Oak console table with drawer, £125</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Oak console table with drawer, £125
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 104.5 cm x W 84 cm x D 43 cm <br>Patina and silver leaf finish with gloss finish</p>
+              <img class="full-view d-none d-md-block" src="projects/silver-table.jpg" alt="oak console table"><br>
+              <img src="projects/silver-table.jpg" alt="oak console table"> 
+			</div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/seahorse-modified_web.jpg" data-toggle="modal" data-target="#image2" alt="thumbnail image of painting of a seahorse"><figcaption class="figure-caption">Atlantis, £420</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Atlantis, £420
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 82 cm x W 102 cm x D 2 cm <br>Multi media on canvas with gold leaf and healing quartz <br>Original, Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/seahorse-modified_web.jpg" alt="painting of a seahorse"><br>
+              <img src="projects/seahorse-modified_web.jpg" alt="painting of a seahorse"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/lady-on-glass.jpg" data-toggle="modal" data-target="#image3" alt="thumbnail image of plexi-glass plaque with a woman"><figcaption class="figure-caption">Ellinida, £180</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Ellinida, £180
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 89 cm x W 30 cm x D 1 cm <br>
+              Plexiglas plaque with limited edition print from Number 6 <br>Added relief border</p>
+              <img class="full-view d-none d-md-block" src="projects/lady-on-glass.jpg" alt="plexi-glass plaque with a woman"><br>
+              <img src="projects/lady-on-glass.jpg" alt="plexi-glass plaque with a woman"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/our-lady.jpg" data-toggle="modal" data-target="#image4" alt="thumbnail image of painting of Fatima"><figcaption class="figure-caption">Fatima, £180</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Fatima, £180
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 120 cm x W 50 cm x D 2 cm<br>Oil and acrylic on canvas<br>Original, Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/our-lady.jpg" alt="painting of Fatima"><br>
+              <img src="projects/our-lady.jpg" alt="painting of Fatima"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/landscape.jpg" data-toggle="modal" data-target="#image5" alt="thumbnail image of painting of an Italian building"><figcaption class="figure-caption">Italian Aura, £460</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Italian Aura, £460
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 172 cm x W 107 cm x D 1 cm <br>Original acrylic on canvas with resin <br>Original, Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/landscape.jpg" alt="painting of an Italian building"><br>
+              <img src="projects/landscape.jpg" alt="painting of an Italian building"> </div>
+          </div>
+        </div>
+      </div>
+   </div>
+ <!-- Column 3 -->
+   <div class="col-xl-3 col-lg-6 col-md-6"> 
+    <figure class="figure"><img class="figure-img" src="projects/pastel-klimt-painting.jpg" data-toggle="modal" data-target="#image6" alt="thumbnail image of interpretation of a Margaret MacDonald painting"><figcaption class="figure-caption">O Ye Who Walk, £320</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">O Ye Who Walk, £320
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 139 cm x W 104.5 cm x D 2.5 cm <br>Interpretation of Margaret MacDonald&rsquo;s painting (wife of Charles Rennie Macintosh) <br>Limited addition print on canvas with hand painted details and relief <br>Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/pastel-klimt-painting.jpg" alt="interpretation of a Margaret MacDonald painting"> <br>
+              <img src="projects/pastel-klimt-painting.jpg" alt="interpretation of a Margaret MacDonald painting"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/chinese-dragon-painting.jpg" data-toggle="modal" data-target="#image7" alt="thumbnail image of painting of a dragon"><figcaption class="figure-caption">Dragon&rsquo;s Orb, £740</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Dragon&rsquo;s Orb, £740 
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 218 cm x W 59.5 cm x D 1.3 cm <br>Wooden panel with resin, gold leaf and vitreous glass <br>Original, Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/chinese-dragon-painting.jpg" alt="painting of a dragon"><br>
+              <img src="projects/chinese-dragon-painting.jpg" alt="painting of a dragon"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/Dark-Klimt-Woman-Painting-Mosaic.jpg" data-toggle="modal" data-target="#image8" alt="thumbnail image of interpretation of Judith painting by Gustav Klimt"><figcaption class="figure-caption">Judith, £1,200</figcaption></figure>
+        <div class="modal fade bd-example-modal-lg" id="image8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Judith, £1,200
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 216 cm x W 59 cm x D 2 cm <br>Interpretation of Gustav  Klimt&rsquo;s &lsquo;Judith&rsquo; <br>Wooden panel with oil painting, vitreous glass and stones <br>Original, Unframed </p>
+              <img class="full-view d-none d-md-block" src="projects/Dark-Klimt-Woman-Painting-Mosaic.jpg" alt="interpretation of Judith painting by Gustav Klimt"><br>
+              <img src="projects/Dark-Klimt-Woman-Painting-Mosaic.jpg" alt="interpretation of Judith painting by Gustav Klimt"> </div>
+          </div>
+        </div>
+      </div>
+    <figure class="figure"><img class="figure-img" src="projects/Celtic-Mosaic.jpg" data-toggle="modal" data-target="#image11" alt="thumbnail image of Celtic abstract mosaic">
+      <figcaption class="figure-caption">Celtic Abstract, £1,000</figcaption></figure><div class="modal fade bd-example-modal-lg" id="image11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">Celtic Abstract, £1,000
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div class="modal-body">
+              <p class="small">H 196 cm x W 59.5 cm x D 2 cm <br>Wooden panel with mosaic of vitreous glass and canvas with oil, acrylic and resin <br>Original, Unframed</p>
+              <img class="full-view d-none d-md-block" src="projects/Celtic-Mosaic.jpg" alt="Celtic abstract mosaic"><br>
+              <img src="projects/Celtic-Mosaic.jpg" alt="Celtic abstract mosaic"> </div>
           </div>
         </div>
       </div>
@@ -511,7 +495,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
 </div>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/baby-scan-healing-quartz-and-amethyst2_web.jpg" data-toggle="modal" data-target="#image23" alt="thumbnail image of painting with baby scan"><figcaption class="figure-caption">Baby scan art, £80&ndash;£120</figcaption></figure>
+    <div class="col-xl-3 col-lg-6 col-md-6"> <figure class="figure"><img class="figure-img" src="projects/baby-scan-healing-quartz-and-amethyst2_web.jpg" data-toggle="modal" data-target="#image23" alt="thumbnail image of painting with baby scan"><figcaption class="figure-caption">Baby scan art, £80&ndash;£120</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -526,7 +510,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/baby-scan-healing-quartz-and-amethyst_web.jpg" data-toggle="modal" data-target="#image22" alt="thumbnail image of painting with baby scan"><figcaption class="figure-caption">Baby scan art, £80&ndash;£120</figcaption></figure>
+    <div class="col-xl-3 col-lg-6 col-md-6"> <figure class="figure"><img class="figure-img" src="projects/baby-scan-healing-quartz-and-amethyst_web.jpg" data-toggle="modal" data-target="#image22" alt="thumbnail image of painting with baby scan"><figcaption class="figure-caption">Baby scan art, £80&ndash;£120</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -541,7 +525,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-	<div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/Klimt-Woman-Painting-Mosaic.jpg" data-toggle="modal" data-target="#image9" alt="thumbnail image of mosaic interpretation of Gustav Klimt painting"><figcaption class="figure-caption">Mosaic</figcaption></figure>
+	<div class="col-xl-3 col-lg-6 col-md-6"> <figure class="figure"><img class="figure-img" src="projects/Klimt-Woman-Painting-Mosaic.jpg" data-toggle="modal" data-target="#image9" alt="thumbnail image of mosaic interpretation of Gustav Klimt painting"><figcaption class="figure-caption">Mosaic</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -556,7 +540,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/Sea-Door-Frame.jpg" data-toggle="modal" data-target="#image10" alt="thumbnail image of sea door frame"><figcaption class="figure-caption">Sea Door Frame</figcaption></figure>
+    <div class="col-xl-3 col-lg-6 col-md-6"> <figure class="figure"><img class="figure-img" src="projects/Sea-Door-Frame.jpg" data-toggle="modal" data-target="#image10" alt="thumbnail image of sea door frame"><figcaption class="figure-caption">Sea Door Frame</figcaption></figure>
         <div class="modal fade bd-example-modal-lg" id="image10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -584,7 +568,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
 </div>
 <div class="container-fluid">
   <div class="row">
-	  <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/Tradeshow-Stand-for-Riche-Lighting-1.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14"><figcaption class="figure-caption">Trade show Stand for Riche Lighting</figcaption></figure>
+	  <div class="col-xl-3 col-lg-6 col-md-6"> <figure class="figure"><img class="figure-img" src="projects/Tradeshow-Stand-for-Riche-Lighting-1.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14"><figcaption class="figure-caption">Trade show Stand for Riche Lighting</figcaption></figure>
           <div class="modal fade bd-example-modal-lg" id="image14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -599,7 +583,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-	   <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/Tradeshow-Stand-for-Riche-Lighting-3.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14-2"><figcaption class="figure-caption">Trade show Stand for Riche Lighting</figcaption></figure>
+	   <div class="col-xl-3 col-lg-6 col-md-6"> <figure class="figure"><img class="figure-img" src="projects/Tradeshow-Stand-for-Riche-Lighting-3.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14-2"><figcaption class="figure-caption">Trade show Stand for Riche Lighting</figcaption></figure>
            <div class="modal fade bd-example-modal-lg" id="image14-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -614,7 +598,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-	   <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/Tradeshow-Stand-for-Riche-Lighting-4.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14-3"><figcaption class="figure-caption">Trade show Stand for Riche Lighting</figcaption></figure>
+	   <div class="col-xl-3 col-lg-6 col-md-6"> <figure class="figure"><img class="figure-img" src="projects/Tradeshow-Stand-for-Riche-Lighting-4.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14-3"><figcaption class="figure-caption">Trade show Stand for Riche Lighting</figcaption></figure>
            <div class="modal fade bd-example-modal-lg" id="image14-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -629,7 +613,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-	  	   <div class="col-xl-3 col-lg-4 col-md-6"> <figure class="figure"><img class="full-view figure-img" src="projects/Tradeshow-Stand-for-Riche-Lighting-2.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14-1"><figcaption class="figure-caption">Trade show Stand for Riche Lighting</figcaption></figure>
+	  	   <div class="col-xl-3 col-lg-6 col-md-6"> <figure class="figure"><img class="figure-img" src="projects/Tradeshow-Stand-for-Riche-Lighting-2.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14-1"><figcaption class="figure-caption">Trade show Stand for Riche Lighting</figcaption></figure>
                <div class="modal fade bd-example-modal-lg" id="image14-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
