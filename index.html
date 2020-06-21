@@ -22,13 +22,19 @@ img {
 .modal-body img {
     width: 100%;
 }
-.modal-body img.full-view {
-    max-height: calc(100vh - 200px);
+.modal-body img.full-view, img.full-view {
     width: auto;
-    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+img.full-view {
+    max-height: 100vh;
+    max-width: 100%;
+}
+.modal-body img.full-view {
+    max-height: calc(100vh - 200px);
+    max-width: 90%;
 }
 
 @media (min-width:768px) {
@@ -65,13 +71,13 @@ img.profile {
   <div class="row">
     <div class="col">
       <h2 style="color: #bb844b; text-align: center;">Art for Sale</h2>
-      <p style="text-align: center;">Delivery or framing can be arranged for an additional cost. Select an image to see details and full size image.</p>
+      <p style="text-align: center;">Delivery or framing can be arranged for an additional cost. Click on an image to see details.</p>
     </div>
   </div>
 </div>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/resin_sea_urchin.jpg" style="width:100%" data-toggle="modal" data-target="#image2-1" alt="thumbnail image of resin urchin image">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/resin_sea_urchin_close.jpg" data-toggle="modal" data-target="#image2-1" alt="thumbnail image of resin urchin image">
       <div class="modal fade bd-example-modal-lg" id="image2-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -81,12 +87,12 @@ img.profile {
             <div class="modal-body">
               <p class="small"> H 28 cm x W 33 cm x D 2.5 cm <br>Multi-media, acrylic and resin <br>Original, Framed</p>
               <img class="full-view d-none d-md-block" src="projects/resin_sea_urchin.jpg" alt="resin urchin image"><br>
-              <img src="projects/resin_sea_urchin.jpg" alt="resin urchin image"><br><img src="projects/resin_sea_urchin_close.jpg" alt="resin urchin image"></div>
+              <img src="projects/resin_sea_urchin_close.jpg" alt="resin urchin image"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/resin_sea_octopus.jpg" style="width:100%" data-toggle="modal" data-target="#image2-2" alt="thumbnail image of resin octopus image">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/resin_sea_octopus_close.jpg" data-toggle="modal" data-target="#image2-2" alt="thumbnail image of resin octopus image">
       <div class="modal fade bd-example-modal-lg" id="image2-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -96,12 +102,12 @@ img.profile {
             <div class="modal-body">
               <p class="small"> H 28 cm x W 33 cm x D 2.5 cm <br>Multi-media, acrylic and resin <br>Original, Framed</p>
               <img class="full-view d-none d-md-block" src="projects/resin_sea_octopus.jpg" alt="resin octopus image"><br>
-              <img src="projects/resin_sea_octopus.jpg" alt="resin octopus image"><br><img src="projects/resin_sea_octopus_close.jpg" alt="resin octopus image"></div>
+              <img src="projects/resin_sea_octopus_close.jpg" alt="resin octopus image"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/resin_sea_jellyfish.jpg" style="width:100%" data-toggle="modal" data-target="#image2-3" alt="thumbnail image of resin jellyfish image">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/resin_sea_jellyfish_close.jpg" data-toggle="modal" data-target="#image2-3" alt="thumbnail image of resin jellyfish image">
       <div class="modal fade bd-example-modal-lg" id="image2-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -111,12 +117,12 @@ img.profile {
             <div class="modal-body">
               <p class="small"> H 28 cm x W 33 cm x D 2.5 cm <br>Multi-media, acrylic and resin <br>Original, Framed</p>
               <img class="full-view d-none d-md-block" src="projects/resin_sea_jellyfish.jpg" alt="resin jellyfish image"><br>
-              <img src="projects/resin_sea_jellyfish.jpg" alt="resin jellyfish image"><br><img src="projects/resin_sea_jellyfish_close.jpg" alt="resin jellyfish image"></div>
+              <img src="projects/resin_sea_jellyfish_close.jpg" alt="resin jellyfish image"></div>
           </div>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/still-life_edit_web.jpg" style="width:100%" data-toggle="modal" data-target="#image30" alt="thumbnail image of organic abstract painting">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/still-life_edit_web.jpg" data-toggle="modal" data-target="#image30" alt="thumbnail image of organic abstract painting">
       <div class="modal fade bd-example-modal-lg" id="image30" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -131,7 +137,7 @@ img.profile {
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/neon-flowers_edit_web.jpg" style="width:100%" data-toggle="modal" data-target="#image29" alt="thumbnail image of neon flowers painting">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/neon-flowers_edit_web.jpg" data-toggle="modal" data-target="#image29" alt="thumbnail image of neon flowers painting">
       <div class="modal fade bd-example-modal-lg" id="image29" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -146,7 +152,7 @@ img.profile {
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/mosaic-frame-mirror.jpg" style="width:100%" data-toggle="modal" data-target="#image28" alt="thumbnail image of mosaic frame mirror">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/mosaic-frame-mirror_edit_web.jpg" data-toggle="modal" data-target="#image28" alt="thumbnail image of mosaic frame mirror">
       <div class="modal fade bd-example-modal-lg" id="image28" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -161,7 +167,7 @@ img.profile {
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/gold-leaf-figure_edit_web.jpg" style="width:100%" data-toggle="modal" data-target="#image27" alt="thumbnail image of artwork with gold leaf">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/gold-leaf-figure_edit_web.jpg" data-toggle="modal" data-target="#image27" alt="thumbnail image of artwork with gold leaf">
       <div class="modal fade bd-example-modal-lg" id="image27" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -176,7 +182,7 @@ img.profile {
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/fairy-painting_edit_web.jpg" style="width:100%" data-toggle="modal" data-target="#image26" alt="thumbnail image of Female Aura painting">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/fairy-painting_edit_web.jpg" data-toggle="modal" data-target="#image26" alt="thumbnail image of Female Aura painting">
       <div class="modal fade bd-example-modal-lg" id="image26" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -191,7 +197,7 @@ img.profile {
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/curly-hair-woman_edit_web.jpg" style="width:100%" data-toggle="modal" data-target="#image25" alt="thumbnail image of painting of a woman">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/curly-hair-woman_edit_web.jpg" data-toggle="modal" data-target="#image25" alt="thumbnail image of painting of a woman">
       <div class="modal fade bd-example-modal-lg" id="image25" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -206,7 +212,7 @@ img.profile {
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/church_edit_web.jpg" style="width:100%" data-toggle="modal" data-target="#image24" alt="thumbnail image of painting of building">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/church_edit_web.jpg" data-toggle="modal" data-target="#image24" alt="thumbnail image of painting of building">
       <div class="modal fade bd-example-modal-lg" id="image24" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -221,7 +227,7 @@ img.profile {
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/redhead-woman_web.jpg" style="width:100%" data-toggle="modal" data-target="#image21" alt="thumbnail image of sea serpents painting">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/redhead-woman_web.jpg" data-toggle="modal" data-target="#image21" alt="thumbnail image of sea serpents painting">
       <div class="modal fade bd-example-modal-lg" id="image21" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -237,7 +243,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/mother-and-child_web.jpg" style="width:100%" data-toggle="modal" data-target="#image20" alt="thumbnail image of painting of motherly love">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/mother-and-child_web.jpg" data-toggle="modal" data-target="#image20" alt="thumbnail image of painting of motherly love">
       <div class="modal fade bd-example-modal-lg" id="image20" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -252,7 +258,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/mermaid-glass-paint-mosaic_web.jpg" style="width:100%" data-toggle="modal" data-target="#image19" alt="thumbnail image of painting of sea woman">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/mermaid-glass-paint-mosaic_web.jpg" data-toggle="modal" data-target="#image19" alt="thumbnail image of painting of sea woman">
       <div class="modal fade bd-example-modal-lg" id="image19" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -269,7 +275,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/bust-mosaic_web.jpg" style="width:100%" data-toggle="modal" data-target="#image18" alt="thumbnail image of bust with mosaic">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/bust-mosaic_web.jpg" data-toggle="modal" data-target="#image18" alt="thumbnail image of bust with mosaic">
       <div class="modal fade bd-example-modal-lg" id="image18" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -284,7 +290,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/blonde-woman_web.jpg" style="width:100%" data-toggle="modal" data-target="#image17" alt="thumbnail image of painting of a woman">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/blonde-woman_web.jpg" data-toggle="modal" data-target="#image17" alt="thumbnail image of painting of a woman">
       <div class="modal fade bd-example-modal-lg" id="image17" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -300,7 +306,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/bird-paint-resin_web.jpg" style="width:100%" data-toggle="modal" data-target="#image16" alt="thumbnail image of glass vase">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/bird-paint-resin_web.jpg" data-toggle="modal" data-target="#image16" alt="thumbnail image of glass vase">
       <div class="modal fade bd-example-modal-lg" id="image16" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -317,7 +323,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/silver-table.jpg" style="width:100%" data-toggle="modal" data-target="#image15" alt="thumbnail image of oak console table">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/silver-table.jpg" data-toggle="modal" data-target="#image15" alt="thumbnail image of oak console table">
       <div class="modal fade bd-example-modal-lg" id="image15" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -333,7 +339,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/seahorse-modified_web.jpg" style="width:100%" data-toggle="modal" data-target="#image2" alt="thumbnail image of painting of a seahorse">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/seahorse-modified_web.jpg" data-toggle="modal" data-target="#image2" alt="thumbnail image of painting of a seahorse">
       <div class="modal fade bd-example-modal-lg" id="image2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -348,7 +354,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/lady-on-glass.jpg" style="width:100%" data-toggle="modal" data-target="#image3" alt="thumbnail image of plexi-glass plaque with a woman">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/lady-on-glass.jpg" data-toggle="modal" data-target="#image3" alt="thumbnail image of plexi-glass plaque with a woman">
       <div class="modal fade bd-example-modal-lg" id="image3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -364,7 +370,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/our-lady.jpg" style="width:100%" data-toggle="modal" data-target="#image4" alt="thumbnail image of painting of Fatima">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/our-lady.jpg" data-toggle="modal" data-target="#image4" alt="thumbnail image of painting of Fatima">
       <div class="modal fade bd-example-modal-lg" id="image4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -379,7 +385,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/landscape.jpg" style="width:100%" data-toggle="modal" data-target="#image5" alt="thumbnail image of painting of an Italian building">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/landscape.jpg" data-toggle="modal" data-target="#image5" alt="thumbnail image of painting of an Italian building">
       <div class="modal fade bd-example-modal-lg" id="image5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -394,7 +400,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/pastel-klimt-painting.jpg" style="width:100%" data-toggle="modal" data-target="#image6" alt="thumbnail image of interpretation of a Margaret MacDonald painting">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/pastel-klimt-painting.jpg" data-toggle="modal" data-target="#image6" alt="thumbnail image of interpretation of a Margaret MacDonald painting">
       <div class="modal fade bd-example-modal-lg" id="image6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -409,7 +415,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/chinese-dragon-painting.jpg" style="width:100%" data-toggle="modal" data-target="#image7" alt="thumbnail image of painting of a dragon">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/chinese-dragon-painting.jpg" data-toggle="modal" data-target="#image7" alt="thumbnail image of painting of a dragon">
       <div class="modal fade bd-example-modal-lg" id="image7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -424,7 +430,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/Dark-Klimt-Woman-Painting-Mosaic.jpg" style="width:100%" data-toggle="modal" data-target="#image8" alt="thumbnail image of interpretation of Judith painting by Gustav Klimt">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/Dark-Klimt-Woman-Painting-Mosaic.jpg" data-toggle="modal" data-target="#image8" alt="thumbnail image of interpretation of Judith painting by Gustav Klimt">
       <div class="modal fade bd-example-modal-lg" id="image8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -439,7 +445,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/Celtic-Mosaic.jpg" style="width:100%" data-toggle="modal" data-target="#image11" alt="thumbnail image of Celtic abstract mosaic">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/Celtic-Mosaic.jpg" data-toggle="modal" data-target="#image11" alt="thumbnail image of Celtic abstract mosaic">
       <div class="modal fade bd-example-modal-lg" id="image11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -454,7 +460,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/Angel-Sculpture.jpg" style="width:100%" data-toggle="modal" data-target="#image12" alt="thumbnail image of bust with mosaic and wings">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/Angel-Sculpture-1.jpg" data-toggle="modal" data-target="#image12" alt="thumbnail image of bust with mosaic and wings">
       <div class="modal fade bd-example-modal-lg" id="image12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -472,7 +478,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/Red-Abstract-Painting-v2_edit_web.jpg" style="width:100%" data-toggle="modal" data-target="#image13" alt="thumbnail image of red abstract painting">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/Red-Abstract-Painting-v2_edit_web.jpg" data-toggle="modal" data-target="#image13" alt="thumbnail image of red abstract painting">
       <div class="modal fade bd-example-modal-lg" id="image13" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -494,13 +500,13 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
   <div class="row">
     <div class="col">
       <h2 style="color: #bb844b; text-align: center;">Art Commissioned or Sold</h2>
-      <p style="text-align: center;">Select an image to see it at full size.</p>
+      <p style="text-align: center;">Click on an image to see details.</p>
     </div>
   </div>
 </div>
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/baby-scan-healing-quartz-and-amethyst2_web.jpg" style="width:100%" data-toggle="modal" data-target="#image23" alt="thumbnail image of painting with baby scan">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/baby-scan-healing-quartz-and-amethyst2_web.jpg" data-toggle="modal" data-target="#image23" alt="thumbnail image of painting with baby scan">
       <div class="modal fade bd-example-modal-lg" id="image23" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -515,7 +521,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/baby-scan-healing-quartz-and-amethyst_web.jpg" style="width:100%" data-toggle="modal" data-target="#image22" alt="thumbnail image of painting with baby scan">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/baby-scan-healing-quartz-and-amethyst_web.jpg" data-toggle="modal" data-target="#image22" alt="thumbnail image of painting with baby scan">
       <div class="modal fade bd-example-modal-lg" id="image22" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -530,7 +536,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-	<div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/Klimt-Woman-Painting-Mosaic.jpg" style="width:100%" data-toggle="modal" data-target="#image9" alt="thumbnail image of mosaic interpretation of Gustav Klimt painting">
+	<div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/Klimt-Woman-Painting-Mosaic.jpg" data-toggle="modal" data-target="#image9" alt="thumbnail image of mosaic interpretation of Gustav Klimt painting">
       <div class="modal fade bd-example-modal-lg" id="image9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -545,7 +551,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-    <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/thumb/Sea-Door-Frame.jpg" style="width:100%" data-toggle="modal" data-target="#image10" alt="thumbnail image of sea door frame">
+    <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/Sea-Door-Frame.jpg" data-toggle="modal" data-target="#image10" alt="thumbnail image of sea door frame">
       <div class="modal fade bd-example-modal-lg" id="image10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -573,7 +579,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
 </div>
 <div class="container-fluid">
   <div class="row">
-	  <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/Tradeshow-Stand-for-Riche-Lighting-1.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" style="width:100%" data-toggle="modal" data-target="#image14">
+	  <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/Tradeshow-Stand-for-Riche-Lighting-1.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14">
       <div class="modal fade bd-example-modal-lg" id="image14" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -588,7 +594,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-	   <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/Tradeshow-Stand-for-Riche-Lighting-3.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" style="width:100%" data-toggle="modal" data-target="#image14-2">
+	   <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/Tradeshow-Stand-for-Riche-Lighting-3.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14-2">
       <div class="modal fade bd-example-modal-lg" id="image14-2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -603,7 +609,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-	   <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/Tradeshow-Stand-for-Riche-Lighting-4.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" style="width:100%" data-toggle="modal" data-target="#image14-3">
+	   <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/Tradeshow-Stand-for-Riche-Lighting-4.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14-3">
       <div class="modal fade bd-example-modal-lg" id="image14-3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
@@ -618,7 +624,7 @@ Wooden base, oil on canvas with gold leaf and vitreous glass</p>
         </div>
       </div>
     </div>
-	  	   <div class="col-xl-3 col-lg-4 col-md-6"> <img src="projects/Tradeshow-Stand-for-Riche-Lighting-2.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" style="width:100%" data-toggle="modal" data-target="#image14-1">
+	  	   <div class="col-xl-3 col-lg-4 col-md-6"> <img class="full-view" src="projects/Tradeshow-Stand-for-Riche-Lighting-2.jpg" alt="thumbnail image of Tradeshow Stand for Riche Lighting" data-toggle="modal" data-target="#image14-1">
       <div class="modal fade bd-example-modal-lg" id="image14-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
